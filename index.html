@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Age calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="main">
+    <form id="form" onsubmit="validateForm()" action="/" method="post">
+     
+      <div class="content">
+        
+      <div class="input_control" id="day">
+        <label for="day">Day</label>
+        <input type="text" placeholder="DD" id="dd" >
+        <div class="error" id="dd_error"></div>
+      </div>
+      
+      <div class="input_control" id="month">
+        <label for="MM">Month</label>
+        <input type="text" placeholder="MM" id="MM">
+        <div class="error" id="MM_error"></div>
+      </div>
+      
+      <div class="input_control" id="year">        
+      <label for="YYYY">Year</label>
+      <input type="text" placeholder="YYYY" id="YYYY">
+      <div class="error" id="YYYY_error"></div>
+      </div>
+
+      </div>
+    
+      <div class="divider">
+        <hr>
+        <button type="submit" class="circular-button" onclick="calculateAge()"> <img src="/assets/images/icon-arrow.svg"  alt="icon" style="height: 2rem; width: 2rem;"></button>
+      </div>
+    </form>
+    
+    <div class="result">
+      <div id="years"><span id="ageYear" > - -</span> years </div>
+      <div id="months">  <span id="ageMonth" > - -</span> months </div>
+      <div id="days">  <span id="ageDay" > - -</span> days </div>
+    </div>
+  </div> 
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">ajeet achal</a>.
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
