@@ -99,11 +99,14 @@ span{
     position: absolute;
     top: 20%;
     left: 15%;
-    transform: translate(-10%, -10%);
+    transform: translate(-15%, -10%);
+    min-width: fit-content;
+    margin: 1rem;
+    border-radius: 12px 12px 120px 12px;
   }
   hr{
     height: 1px;
-    max-width: 17rem;
+    max-width: 90%;
 }
 input{
     font-size: 20px;
@@ -112,5 +115,24 @@ input{
     max-height: 2rem;
     padding-left: 0.5rem;
 }
-    
+.result{  
+    font-weight: 900;
+    font-size: 2rem;
+}
+span{
+    font-weight: 900;
+    font-size: 2rem;
+}
+.input_control{
+    margin-right: 1rem;
+    display: grid;
+}
+hr{
+    width: 90%;
+}
+
+.circular-button {
+    height: 60px;
+    width: 60px;
+}    
 }
