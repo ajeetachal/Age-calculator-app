@@ -17,10 +17,10 @@ body{
     padding: 2rem;
     text-align: left;
     border-radius: 12px 12px 190px 12px;
-    width: fit-content;
+    width: 60%;
     background-color: hsl(0, 0%, 100%);
     height: fit-content;
-    box-shadow: 0 0 8px rgba(0, 0, 0.6, 0.6);
+    box-shadow: 0 0 8px rgba(0, 0, 0, -0.2);
 }
 .content{
     display: flex;
@@ -28,7 +28,9 @@ body{
     text-transform: uppercase;
     letter-spacing: 3px;
     font-size: 12px;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
+    color: hsl(0, 1%, 44%);
+
 }
 .divider{
     align-items: center;
@@ -36,15 +38,16 @@ body{
 }
 hr{
     height: 1px;
-    width: 32rem;
+    width: 90%;
 }
 input{
     font-size: 20px;
     font-weight: 700;
-    width: 6rem;
-    height: 2.8rem;
-    padding-left: 0.5rem;
+    width: 8rem;
+    height: 3rem;
+    padding-left: 1rem;
     border-radius: 5px;
+    border: hsl(0, 1%, 44%) solid 0.5px;
 }
 span{
     color: hsl(259, 100%, 65%);
@@ -52,7 +55,7 @@ span{
     font-weight: 800;
 }
 .input_control{
-    margin-right: 0.8rem;
+    margin-right: 2rem;
     display: grid;
 }
  
@@ -73,8 +76,8 @@ span{
 .circular-button {
     background-color: hsl(259, 100%, 65%);
     border-radius: 50%;
-    height: 60px;
-    width: 60px;
+    height: 90px;
+    width: 90px;
     display: flex;
     align-items: center;
     justify-content: center;
